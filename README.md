@@ -1,0 +1,2 @@
+# CordovaPluginsDemo
+这里用于添加官方提供的或者第三方插件的使用demo，并将demo整合到一个app上
