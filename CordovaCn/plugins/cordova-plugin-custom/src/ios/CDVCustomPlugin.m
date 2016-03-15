@@ -7,10 +7,10 @@
 - (void)echo:(CDVInvokedUrlCommand*)command
 {
     NSString* isRunBackgroud = [command argumentAtIndex:0];
-    if([isRunBackgroud.isEqualToString:@"false"]) {
+    if([isRunBackgroud isEqualToString:@"false"]) {
         CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Invoke success!"];
         [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
-    } else if(isRunBackgroud.equals("true")) {
+    } else if([isRunBackgroud isEqualToString:@"true"]) {
         [self.commandDelegate runInBackground:^ {
             CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Invoke success(background)!"];
             [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];

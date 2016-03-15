@@ -21,7 +21,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/customPlugin.java" target-dir="src/com/cordovacn/www/customPlugin" />
+        <source-file src="src/android/customPlugin.java" target-dir="src/com/cordovacn/www" />
     </platform>
     
     <platform name="ios">
