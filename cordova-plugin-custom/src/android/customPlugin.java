@@ -3,11 +3,15 @@ package com.cordovacn.www;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
+import org.json.JSONArray;
+import org.json.JSONException;
+
+
 
 public class customPlugin extends CordovaPlugin {
-
+    
     public static final String METHOD_ECHO = "echo";
-
+    
     /**
      * Executes the request and returns PluginResult.
      *
@@ -17,9 +21,7 @@ public class customPlugin extends CordovaPlugin {
      * @return                  True if the action was valid, false otherwise.
      */
     public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-
-        this.callbackContext = callbackContext;
-
+        
         if (action.equals(customPlugin.METHOD_ECHO)) {
             final String isRunBackgroud = args.getString(0);
             if(isRunBackgroud.equals("false")) {
