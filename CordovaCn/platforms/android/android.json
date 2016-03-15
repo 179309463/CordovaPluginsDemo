@@ -9,11 +9,11 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
@@ -44,10 +44,10 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
-        "cordova-plugin-contacts": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
         "cordova-plugin-custom": {
@@ -56,11 +56,6 @@
     },
     "dependent_plugins": {},
     "modules": [
-        {
-            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
-            "id": "cordova-plugin-whitelist.whitelist",
-            "runs": true
-        },
         {
             "file": "plugins/cordova-plugin-contacts/www/contacts.js",
             "id": "cordova-plugin-contacts.contacts",
@@ -125,6 +120,11 @@
             ]
         },
         {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
             "file": "plugins/cordova-plugin-custom/www/customPlugin.js",
             "id": "cordova-plugin-custom.customPlugin",
             "clobbers": [
@@ -133,8 +133,8 @@
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.2.1",
         "cordova-plugin-contacts": "2.0.1",
+        "cordova-plugin-whitelist": "1.2.1",
         "cordova-plugin-custom": "1.0.0"
     }
 }

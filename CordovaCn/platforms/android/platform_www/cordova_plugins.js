@@ -1,11 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
-        "id": "cordova-plugin-whitelist.whitelist",
-        "runs": true
-    },
-    {
         "file": "plugins/cordova-plugin-contacts/www/contacts.js",
         "id": "cordova-plugin-contacts.contacts",
         "clobbers": [
@@ -69,6 +64,11 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+        "id": "cordova-plugin-whitelist.whitelist",
+        "runs": true
+    },
+    {
         "file": "plugins/cordova-plugin-custom/www/customPlugin.js",
         "id": "cordova-plugin-custom.customPlugin",
         "clobbers": [
@@ -79,8 +79,8 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.2.1",
     "cordova-plugin-contacts": "2.0.1",
+    "cordova-plugin-whitelist": "1.2.1",
     "cordova-plugin-custom": "1.0.0"
 };
 // BOTTOM OF METADATA

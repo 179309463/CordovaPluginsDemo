@@ -7,10 +7,10 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
-        "cordova-plugin-contacts": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
         "cordova-plugin-custom": {
