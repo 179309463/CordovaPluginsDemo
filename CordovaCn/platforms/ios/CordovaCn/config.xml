@@ -28,14 +28,21 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Contacts">
+        <param name="ios-package" value="CDVContacts" />
+    </feature>
+    <feature name="customPlugin">
+        <param name="ios-package" value="CDVCustomPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <name>CordovaCn</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="46517115@qq.com" href="https://github.com/ryouaki">
+        CordovaCn Team
     </author>
     <content src="index.html" />
     <access origin="*" />

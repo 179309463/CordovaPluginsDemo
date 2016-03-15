@@ -9,6 +9,12 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-custom": {
+            "PACKAGE_NAME": "com.cordovacn.www"
         }
     },
     "dependent_plugins": {}
