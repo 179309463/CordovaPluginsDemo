@@ -25,3 +25,4 @@
 21.Legacy Whitelist(未)<br>
 
 ###第三方常用插件
+01.[如何自定义插件](https://github.com/CordovaCn/CordovaPluginsDemo/tree/master/cordova-plugin-custom) (@作者Ryouaki)
