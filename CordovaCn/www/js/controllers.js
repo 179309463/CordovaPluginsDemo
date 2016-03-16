@@ -9,7 +9,7 @@ angular.module('demoList.controllers',[])
 //  var a = $statsParams.id;
 //  alert(a);
 })
-.controller('customPluginController', function($scope, $stateParams) {
+.controller('customController', function($scope, $stateParams) {
   $scope.test1 = function() {
     navigator.customPlugin.echo(function(result){
       alert(result);

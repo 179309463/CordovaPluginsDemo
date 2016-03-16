@@ -5,7 +5,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
-
+import android.widget.Toast;
 
 
 public class customPlugin extends CordovaPlugin {
@@ -23,6 +23,8 @@ public class customPlugin extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
         
         if (action.equals(customPlugin.METHOD_ECHO)) {
+            //加个Toast提示
+            Toast.makeText(this.cordova.getActivity(),action,Toast.LENGTH_SHORT).show();
             final String isRunBackgroud = args.getString(0);
             if(isRunBackgroud.equals("false")) {
                 callbackContext.success("Invoke success!");

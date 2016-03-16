@@ -2,7 +2,7 @@ angular.module('demoList', ['ionic','demoList.controllers'])
   .factory('Demos', function(){
   return {
     all:function() {
-      return ['customPlugin'];
+      return ['custom','contacts'];
     }
   }
 }).config(function($stateProvider, $urlRouterProvider) {
@@ -17,10 +17,10 @@ angular.module('demoList', ['ionic','demoList.controllers'])
           templateUrl: 'templates/detail.html',
           controller: 'menusController'
     })
-    .state('customPlugin', {
-      url: '/customPlugin',
-      templateUrl: 'templates/customPlugin.html',
-      controller: 'customPluginController'
+    .state('custom', {
+      url: '/custom',
+      templateUrl: 'templates/custom.html',
+      controller: 'customController'
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app');
