@@ -5,7 +5,7 @@
 01.Battery Status(未)<br>
 02.Camera(未)<br>
 03.Console(未)<br>
-04.Contacts(未)<br>
+04.[Contacts(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/04.cordova-plugin-contacts.md) (@作者Ryouaki)<br>
 05.Device(未)<br>
 06.Device Motion(未)<br>
 07.Device Orientation(未)<br>
