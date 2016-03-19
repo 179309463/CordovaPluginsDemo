@@ -5,6 +5,20 @@ angular.module('demoList', ['ionic','demoList.controllers'])
       return ['custom','contacts'];
     }
   }
+}).factory('utils',function(){
+  return {
+    imgToBase64:function(img) {
+        var canvas = document.createElement("canvas");
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, img.width, img.height);
+
+        var dataURL = canvas.toDataURL("image/png");
+        return dataURL
+    }
+  }
 }).config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('app', {
@@ -12,16 +26,18 @@ angular.module('demoList', ['ionic','demoList.controllers'])
       templateUrl: 'templates/menus.html',
       controller: 'appCtrl'
     })
-    .state('detail', {
-      url: '/detail/:id',
-          templateUrl: 'templates/detail.html',
-          controller: 'menusController'
-    })
     .state('custom', {
       url: '/custom',
       templateUrl: 'templates/custom.html',
       controller: 'customController'
-  });
+    })
+    .state('contacts', {
+      url: '/contacts',
+      templateUrl: 'templates/contacts.html',
+      controller: 'contactsController'
+    });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app');
 });
+
+angular.module('demoList.controllers',[]);

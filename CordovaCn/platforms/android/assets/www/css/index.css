@@ -100,3 +100,17 @@ h1 {
 .menuList {
   padding-top: initial;
 }
+
+.button.button-block {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contacts-photo {
+    width:15%;
+}
+
+.contacts-default-photo {
+    border: none;
+    margin-left: 5%;
+}
