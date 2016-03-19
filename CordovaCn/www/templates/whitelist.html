@@ -1,0 +1,12 @@
+<ion-view view-title="contacts">
+    <ion-header-bar>
+        <h1 class="title">Whitelist Plugin Demo</h1>
+        <button class="button button-clear button-positive" ng-click="onBack()">Back</button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <a class="button button-block button-positive" href="tel:13900000000">拨号(href="tel:*"，不能用button)</a><br>
+        <a class="button button-block button-positive" href="sms:13900000000">发短信(href="sms:*"，不能用button)</a><br>
+        <button class="button button-block button-positive" ng-click="test1()">加载百度(allow-navigation,过去回不来)</button><br>
+		<button class="button button-block button-positive" ng-click="test2()">加载百度(access origin="*")</button><br>
+    </ion-content>
+</ion-view>

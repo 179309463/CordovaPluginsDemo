@@ -2,7 +2,7 @@ angular.module('demoList', ['ionic','demoList.controllers'])
   .factory('Demos', function(){
   return {
     all:function() {
-      return ['custom','contacts'];
+      return ['custom','contacts','whitelist'];
     }
   }
 }).factory('utils',function(){
@@ -35,6 +35,11 @@ angular.module('demoList', ['ionic','demoList.controllers'])
       url: '/contacts',
       templateUrl: 'templates/contacts.html',
       controller: 'contactsController'
+    })
+	.state('whitelist', {
+      url: '/whitelist',
+      templateUrl: 'templates/whitelist.html',
+      controller: 'whitelistController'
     });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app');
