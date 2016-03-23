@@ -1,8 +1,22 @@
 angular.module('demoList', ['ionic','demoList.controllers'])
-  .factory('Demos', function(){
+.run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
+
+    }
+    if (window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
+}).factory('Demos', function(){
   return {
     all:function() {
-      return ['custom','contacts','whitelist'];
+      return ['custom','batterystatus','contacts','whitelist'];
     }
   }
 }).factory('utils',function(){
@@ -31,7 +45,12 @@ angular.module('demoList', ['ionic','demoList.controllers'])
       templateUrl: 'templates/custom.html',
       controller: 'customController'
     })
-    .state('contacts', {
+    .state('batterystatus', {
+      url: '/batterystatus',
+      templateUrl: 'templates/batterystatus.html',
+      controller: 'batterystatusController'
+    })
+	.state('contacts', {
       url: '/contacts',
       templateUrl: 'templates/contacts.html',
       controller: 'contactsController'

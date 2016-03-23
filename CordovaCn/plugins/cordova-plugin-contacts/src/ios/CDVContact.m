@@ -356,7 +356,9 @@ static NSDictionary* org_apache_cordova_contacts_defaultFields = nil;
                             data = [NSData dataWithContentsOfURL:photoUrl options:NSDataReadingUncached error:&err];
                         }
                         if (data && ([data length] > 0)) {
-                            bSuccess = ABPersonSetImageData(person, (__bridge CFDataRef)data, &error);
+//                            bSuccess = ABPersonSetImageData(person, (__bridge CFDataRef)data, &error);
+                            NSData *imageData = UIImageJPEGRepresentation([UIImage imageWithData:data],1);
+                            bSuccess = ABPersonSetImageData(person, (__bridge CFDataRef)imageData, &error);
                         }
                         if (!data || !bSuccess) {
                             NSLog(@"error setting contact image: %@", (err != nil ? [err localizedDescription] : @""));

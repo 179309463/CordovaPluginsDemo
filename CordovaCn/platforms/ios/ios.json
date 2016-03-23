@@ -9,11 +9,19 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"customPlugin\"><param name=\"ios-package\" value=\"CDVCustomPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Contacts\"><param name=\"ios-package\" value=\"CDVContacts\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"customPlugin\"><param name=\"ios-package\" value=\"CDVCustomPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -25,15 +33,37 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
+        "cordova-plugin-custom": {
+            "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.cordovacn.www"
+        },
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
-        "cordova-plugin-custom": {
+        "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "com.cordovacn.www"
         }
     },
     "dependent_plugins": {},
     "modules": [
+        {
+            "file": "plugins/cordova-plugin-custom/www/customPlugin.js",
+            "id": "cordova-plugin-custom.customPlugin",
+            "pluginId": "cordova-plugin-custom",
+            "clobbers": [
+                "navigator.customPlugin"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
         {
             "file": "plugins/cordova-plugin-contacts/www/contacts.js",
             "id": "cordova-plugin-contacts.contacts",
@@ -123,16 +153,18 @@
             ]
         },
         {
-            "file": "plugins/cordova-plugin-custom/www/customPlugin.js",
-            "id": "cordova-plugin-custom.customPlugin",
-            "pluginId": "cordova-plugin-custom",
+            "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+            "id": "cordova-plugin-battery-status.battery",
+            "pluginId": "cordova-plugin-battery-status",
             "clobbers": [
-                "navigator.customPlugin"
+                "navigator.battery"
             ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-contacts": "2.0.1",
-        "cordova-plugin-custom": "1.0.0"
+        "cordova-plugin-custom": "1.0.0",
+        "cordova-plugin-device": "1.1.1",
+        "cordova-plugin-contacts": "2.0.2-dev",
+        "cordova-plugin-battery-status": "1.1.1"
     }
 }

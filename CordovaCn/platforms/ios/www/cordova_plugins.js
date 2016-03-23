@@ -1,6 +1,22 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/cordova-plugin-custom/www/customPlugin.js",
+        "id": "cordova-plugin-custom.customPlugin",
+        "pluginId": "cordova-plugin-custom",
+        "clobbers": [
+            "navigator.customPlugin"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device/www/device.js",
+        "id": "cordova-plugin-device.device",
+        "pluginId": "cordova-plugin-device",
+        "clobbers": [
+            "device"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-contacts/www/contacts.js",
         "id": "cordova-plugin-contacts.contacts",
         "pluginId": "cordova-plugin-contacts",
@@ -89,19 +105,21 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-custom/www/customPlugin.js",
-        "id": "cordova-plugin-custom.customPlugin",
-        "pluginId": "cordova-plugin-custom",
+        "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+        "id": "cordova-plugin-battery-status.battery",
+        "pluginId": "cordova-plugin-battery-status",
         "clobbers": [
-            "navigator.customPlugin"
+            "navigator.battery"
         ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-contacts": "2.0.1",
-    "cordova-plugin-custom": "1.0.0"
+    "cordova-plugin-custom": "1.0.0",
+    "cordova-plugin-device": "1.1.1",
+    "cordova-plugin-contacts": "2.0.2-dev",
+    "cordova-plugin-battery-status": "1.1.1"
 }
 // BOTTOM OF METADATA
 });

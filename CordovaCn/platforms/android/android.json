@@ -9,15 +9,23 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
                             "xml": "<feature name=\"customPlugin\"><param name=\"android-package\" value=\"com.cordovacn.www.customPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Battery\"><param name=\"android-package\" value=\"org.apache.cordova.batterystatus.BatteryListener\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -44,18 +52,43 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-contacts": {
-            "PACKAGE_NAME": "com.cordovacn.www"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
         "cordova-plugin-custom": {
             "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.cordovacn.www"
         }
     },
     "dependent_plugins": {},
     "modules": [
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-custom/www/customPlugin.js",
+            "id": "cordova-plugin-custom.customPlugin",
+            "clobbers": [
+                "navigator.customPlugin"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "clobbers": [
+                "device"
+            ]
+        },
         {
             "file": "plugins/cordova-plugin-contacts/www/contacts.js",
             "id": "cordova-plugin-contacts.contacts",
@@ -120,21 +153,18 @@
             ]
         },
         {
-            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
-            "id": "cordova-plugin-whitelist.whitelist",
-            "runs": true
-        },
-        {
-            "file": "plugins/cordova-plugin-custom/www/customPlugin.js",
-            "id": "cordova-plugin-custom.customPlugin",
+            "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+            "id": "cordova-plugin-battery-status.battery",
             "clobbers": [
-                "navigator.customPlugin"
+                "navigator.battery"
             ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-contacts": "2.0.1",
         "cordova-plugin-whitelist": "1.2.1",
-        "cordova-plugin-custom": "1.0.0"
+        "cordova-plugin-custom": "1.0.0",
+        "cordova-plugin-device": "1.1.1",
+        "cordova-plugin-contacts": "2.0.2-dev",
+        "cordova-plugin-battery-status": "1.1.1"
     }
 }
