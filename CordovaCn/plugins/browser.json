@@ -21,6 +21,9 @@
         },
         "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.cordovacn.www"
         }
     },
     "dependent_plugins": {}

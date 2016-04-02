@@ -114,3 +114,8 @@ h1 {
     border: none;
     margin-left: 5%;
 }
+
+.camera-img {
+	width: 100%;
+	height: auto;
+}

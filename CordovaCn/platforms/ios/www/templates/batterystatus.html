@@ -1,0 +1,13 @@
+<ion-view view-title="custom">
+    <ion-header-bar>
+        <h1 class="title">Battery Status Plugin Demo</h1>
+        <button class="button button-clear button-positive" ng-click="onBack()">Back</button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <button class="button button-block button-positive" ng-click="test1()">开始监听电源事件(batterystatus)</button><br>
+        <button class="button button-block button-positive" ng-click="test2()">取消监听电源事件(batterystatus)</button><br>
+		<label class="item-input-wrapper">
+      		{{message}}
+    	</label>
+    </ion-content>
+</ion-view>

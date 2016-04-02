@@ -1,0 +1,13 @@
+<ion-view view-title="custom">
+    <ion-header-bar>
+        <h1 class="title">Camera Plugin Demo</h1>
+        <button class="button button-clear button-positive" ng-click="onBack()">Back</button>
+    </ion-header-bar>
+    <ion-content class="padding">
+		<img id="photo" class="camera-img">
+        <button class="button button-block button-positive" ng-click="test1()">拍照(getPicture[DATA_URL])</button><br>
+        <button class="button button-block button-positive" ng-click="test2()">拍照(getPicture[FILE_URI])</button><br>
+		<button class="button button-block button-positive" ng-click="test3()">拍照并存入相册(取得文件物理路径)</button><br>
+		<button class="button button-block button-positive" ng-click="test4()">从相册选取图片</button><br>
+    </ion-content>
+</ion-view>
