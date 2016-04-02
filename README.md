@@ -2,7 +2,7 @@
 这里用于添加官方提供的或者第三方插件的使用demo，并将demo整合到一个app上
 
 ###官方插件
-01.Battery Status(未)<br>
+01.[Battery Status(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/01.cordova-plugin-battery-status.md) (@作者Ryouaki)<br>
 02.Camera(未)<br>
 03.Console(未)<br>
 04.[Contacts(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/04.cordova-plugin-contacts.md) (@作者Ryouaki)<br>
@@ -21,7 +21,7 @@
 17.Splashscreen(未)<br>
 18.Vibration(未)<br>
 19.Statusbar(未)<br>
-20.Whitelist(未)<br>
+20.[Whitelist(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/20.cordova-plugin-whitelist.md) (@作者Ryouaki)<br>
 21.Legacy Whitelist(未)<br>
 
 ###第三方常用插件
