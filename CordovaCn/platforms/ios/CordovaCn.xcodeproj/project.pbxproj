@@ -28,6 +28,7 @@
 		2FD07F95DF274915B726F823 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C5AE457AE34DB09303F289 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D4CF10C828BD44008E2FC622 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC2268DDE9A844F4A85183F3 /* CoreLocation.framework */; };
 		CB3239FB9BF54CED9F362E6D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2434A65E1D41038B986CBC /* AVFoundation.framework */; };
+		35A28D090371451382BAD0F4 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D639FEA35AD648A7ACC1A45D /* CDVLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		A3C5AE457AE34DB09303F289 /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		EC2268DDE9A844F4A85183F3 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		FB2434A65E1D41038B986CBC /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D639FEA35AD648A7ACC1A45D /* CDVLogger.m */ = {isa = PBXFileReference; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3EFFFBDC6C1D4343A8E830E7 /* CDVLogger.h */ = {isa = PBXFileReference; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,8 @@
 				4AF6E2954AC9421DB9C33EFE /* CDVCamera.h */,
 				1AED29286CCC4D138DF39258 /* CDVJpegHeaderWriter.h */,
 				82EB611A7B17454A926724CA /* CDVExif.h */,
+				D639FEA35AD648A7ACC1A45D /* CDVLogger.m */,
+				3EFFFBDC6C1D4343A8E830E7 /* CDVLogger.h */,
 			);
 			name = Plugins;
 			path = CordovaCn/Plugins;
@@ -348,6 +353,7 @@
 				1BBD531511F447728446E90A /* UIImage+CropScaleOrientation.m in Sources */,
 				F5CB7699A745483BBF5E7744 /* CDVCamera.m in Sources */,
 				6663CC74CC4546DD85B1CA24 /* CDVJpegHeaderWriter.m in Sources */,
+				35A28D090371451382BAD0F4 /* CDVLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

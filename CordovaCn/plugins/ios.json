@@ -24,6 +24,9 @@
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.cordovacn.www"
         }
     },
     "dependent_plugins": {}
