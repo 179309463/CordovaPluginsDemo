@@ -143,6 +143,22 @@ module.exports = [
         "clobbers": [
             "CameraPopoverHandle"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+        "id": "cordova-plugin-console.console",
+        "pluginId": "cordova-plugin-console",
+        "clobbers": [
+            "console"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/logger.js",
+        "id": "cordova-plugin-console.logger",
+        "pluginId": "cordova-plugin-console",
+        "clobbers": [
+            "cordova.logger"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -152,7 +168,8 @@ module.exports.metadata =
     "cordova-plugin-device": "1.1.1",
     "cordova-plugin-contacts": "2.0.2-dev",
     "cordova-plugin-battery-status": "1.1.1",
-    "cordova-plugin-camera": "2.1.1"
+    "cordova-plugin-camera": "2.1.1",
+    "cordova-plugin-console": "1.0.2"
 }
 // BOTTOM OF METADATA
 });
