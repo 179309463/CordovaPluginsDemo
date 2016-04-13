@@ -13,9 +13,6 @@
         "cordova-plugin-custom": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.cordovacn.www"
-        },
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.cordovacn.www"
         },
@@ -26,6 +23,9 @@
             "PACKAGE_NAME": "com.cordovacn.www"
         },
         "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.cordovacn.www"
+        },
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "com.cordovacn.www"
         }
     },

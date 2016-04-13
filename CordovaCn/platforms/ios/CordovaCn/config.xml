@@ -32,9 +32,6 @@
         <param name="ios-package" value="CDVCustomPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
-    </feature>
     <feature name="Contacts">
         <param name="ios-package" value="CDVContacts" />
     </feature>
@@ -47,6 +44,9 @@
     <preference name="CameraUsesGeolocation" value="false" />
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
     </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
