@@ -16,7 +16,7 @@ angular.module('demoList', ['ionic','demoList.controllers'])
 }).factory('Demos', function(){
   return {
     all:function() {
-      return ['custom','batterystatus','camera','console','contacts','whitelist'];
+      return ['custom','batterystatus','camera','console','contacts','device','whitelist'];
     }
   }
 }).factory('utils',function(){
@@ -64,6 +64,11 @@ angular.module('demoList', ['ionic','demoList.controllers'])
       url: '/console',
       templateUrl: 'templates/console.html',
       controller: 'consoleController'
+    })
+  	.state('device', {
+      url: '/device',
+      templateUrl: 'templates/device.html',
+      controller: 'deviceController'
     })
 	.state('whitelist', {
       url: '/whitelist',

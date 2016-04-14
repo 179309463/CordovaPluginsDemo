@@ -1,0 +1,72 @@
+<ion-view view-title="custom">
+    <ion-header-bar>
+        <h1 class="title">Custom Plugin Demo</h1>
+        <button class="button button-clear button-positive" ng-click="onBack()">Back</button>
+    </ion-header-bar>
+    <ion-content class="padding">
+          <div class="card">
+            <div class="item item-divider">
+              Device.cordova
+            </div>
+            <div class="item item-text-wrap">
+                {{cordova}}
+            </div>
+          </div>
+          <div class="card">
+            <div class="item item-divider">
+              Device.model
+            </div>
+            <div class="item item-text-wrap">
+                {{model}}
+            </div>
+          </div>
+          <div class="card">
+            <div class="item item-divider">
+              Device.platform
+            </div>
+            <div class="item item-text-wrap">
+                {{platform}}
+            </div>
+          </div>
+          <div class="card">
+            <div class="item item-divider">
+              Device.uuid
+            </div>
+            <div class="item item-text-wrap">
+                {{uuid}}
+            </div>
+          </div>
+          <div class="card">
+            <div class="item item-divider">
+              Device.version
+            </div>
+            <div class="item item-text-wrap">
+                {{version}}
+            </div>
+          </div>
+          <div class="card">
+            <div class="item item-divider">
+              Device.manufacturer
+            </div>
+            <div class="item item-text-wrap">
+                {{manufacturer}}
+            </div>
+          </div>
+		  <div class="card">
+            <div class="item item-divider">
+              Device.isVirtual
+            </div>
+            <div class="item item-text-wrap">
+                {{isVirtual}}
+            </div>
+          </div>
+		  <div class="card">
+            <div class="item item-divider">
+              Device.serial (不支持iOS)
+            </div>
+            <div class="item item-text-wrap">
+                {{serial}}
+            </div>
+          </div>
+    </ion-content>
+</ion-view>
