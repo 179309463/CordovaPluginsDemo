@@ -24,5 +24,5 @@
 20.[Whitelist(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/20.cordova-plugin-whitelist.md) (@作者Ryouaki)<br>
 
 ###第三方常用插件
-01.[如何自定义插件](https://github.com/CordovaCn/CordovaPluginsDemo/tree/master/cordova-plugin-custom) (@作者Ryouaki)
+01.[如何自定义插件](https://github.com/CordovaCn/CordovaPluginsDemo/tree/master/cordova-plugin-custom) (@作者Ryouaki)<br>
 02.[Cordova-Plugin-Photos Demo(获取多图插件)](https://github.com/ryouaki/Cordova-Plugin-Photos/blob/master/README.md) (@作者Ryouaki)<br>
