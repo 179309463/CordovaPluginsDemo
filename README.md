@@ -3,11 +3,11 @@
 
 ###官方插件
 01.[Battery Status(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/01.cordova-plugin-battery-status.md) (@作者Ryouaki)<br>
-02.Camera(未)<br>
-03.Console(未)<br>
+02.[Camera(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/02.cordova-plugin-camera.md) (@作者Ryouaki)<br>
+03.[Console(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/03.cordova-plugin-console.md) (@作者Ryouaki)<br>
 04.[Contacts(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/04.cordova-plugin-contacts.md) (@作者Ryouaki)<br>
-05.Device(未)<br>
-06.Device Motion(未)<br>
+05.[Device(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/05.cordova-plugin-device.md) (@作者Ryouaki)<br>
+06.[Device Motion(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/06.cordova-plugin-device-motion.md) (@作者Ryouaki)<br>
 07.Device Orientation(未)<br>
 08.Dialogs(未)<br>
 09.File(未)<br>
@@ -22,7 +22,7 @@
 18.Vibration(未)<br>
 19.Statusbar(未)<br>
 20.[Whitelist(完)](https://github.com/CordovaCn/CordovaCn/blob/master/02%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8(About%20Plugin)/20.cordova-plugin-whitelist.md) (@作者Ryouaki)<br>
-21.Legacy Whitelist(未)<br>
 
 ###第三方常用插件
 01.[如何自定义插件](https://github.com/CordovaCn/CordovaPluginsDemo/tree/master/cordova-plugin-custom) (@作者Ryouaki)
+02.[Cordova-Plugin-Photos Demo(获取多图插件)](https://github.com/ryouaki/Cordova-Plugin-Photos/blob/master/README.md) (@作者Ryouaki)<br>
